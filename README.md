@@ -4,18 +4,21 @@
 
 -	Sinatra is small and flexible. It does not follow the typical model-view-contoller pattern. Instead Sinatra focuses on quickly creating web applications with minimal effort.
 
+- Sinatra is best used for smaller web applications.
+
 
 -	Sinatra is similar to Ruby on Rails in that they are both web frameworks. It's pretty different from Rails in that it's much lighter (less overhead), and you have more fine-grained control over your webapp. Additionally, there is no built-in database functionality or page rendering — all of that is done manually.
 
 -	Sinatra is fast and simple. Its efficient. However with that comes more work and more room for error.
 
-- Sinatra is best used for smaller web applications.
+- Two primary approaches to building Sinatra applications: classic and modular. In modular mode, you explicitly subclass Sinatra and build your application within that scope; in classic mode, you just require Sinatra and start defining endpoints.
+
+- Sinatra leaves many common attack vectors open for you to deal with (or not deal with as is often the case).
+
+- General rule of thumb is to use Rails when you need a database and Sinatra when you don't.
 
 -	Some companies that use Sinatra are Apple, LinkedIn, Heroku, GitHub, and Engine yard.
 
-
-
-* Install 'gem install sinatra' to start working with Sinatra.
 
 
 # Installing and Trying Sinatra
