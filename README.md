@@ -21,29 +21,53 @@
 
 
 
-# Installing and Trying Sinatra
+### Installing and Trying Sinatra
 
-If you're not yet using Sinatra and want to give it a quick try, you can install it with RubyGems:
+Just as you would install any other gem, Sinatra is installed like so:
 
 ```
 gem install sinatra
 
 ```
 
-Put the following basic example into a file, say example.rb:
+That is all. You have installed Sinatra.
+
+### Getting started: Hello World
+
+Your first web application should be simple, and easy to understand. Applications are wrapped in Ruby classes. Here's a simple web application in 2 files:
 
 ```
 
-require 'rubygems'
+# app.rb
 require 'sinatra'
 
-get '/hi' do
-  "Hello World!"
+class HelloWorldApp < Sinatra::Base
+  get '/' do
+    "Hello, world!"
+  end
 end
 
 ```
 
-Then run the Ruby file in the usual way, and a request to http://localhost:4567/hi should get you a "Hello World!" response.
+```
+
+# config.ru
+require './app'
+run HelloWorldApp
+
+```
+
+After writing the contents to the two files app.rb and config.ru you can run the application by running from the same folder (say,/home/user/code/my_sinatra_app):
+
+```
+
+rackup
+
+```
+
+This starts WEBrick, which serves your application. You will notice that WEBRick tells you what IP and port it is serving; take note. You can access your application at http://IP:port.
+
+
 
 For more info visit:
 http://www.sinatrarb.com/
