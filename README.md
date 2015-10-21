@@ -20,14 +20,14 @@ Installing and Trying Sinatra
 
 If you're not yet using Sinatra and want to give it a quick try, you can install it with RubyGems:
 
-'''
+''''
 gem install sinatra
 
-'''
+''''
 
 Put the following basic example into a file, say example.rb:
 
-'''
+''''
 
 require 'rubygems'
 require 'sinatra'
@@ -35,7 +35,8 @@ require 'sinatra'
 get '/hi' do
   "Hello World!"
 end
-'''
+
+''''
 
 Then run the Ruby file in the usual way, and a request to http://localhost:4567/hi should get you a "Hello World!" response.
 
