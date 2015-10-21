@@ -22,7 +22,7 @@ Installing and Trying Sinatra
 
 If you're not yet using Sinatra and want to give it a quick try, you can install it with RubyGems:
 
-gem install sinatra
+''''gem install sinatra''''
 Put the following basic example into a file, say example.rb:
 
 require 'rubygems'
